@@ -1,0 +1,79 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.indicator-reading {
+  text-align: center;
+}
+
+.indicator-reading p {
+  margin: 0;
+}
+
+.number {
+  font-size: 10vw;
+  font-family: "Odibee Sans", cursive;
+}
+
+.units {
+  font-size: 20px;
+  font-family: "Poiret One", cursive;
+}
+
+.indicator-name {
+  font-size: 40px;
+  font-family: "Righteous", cursive;
+  font-weight: normal;
+  margin: 0;
+}
+
+.polygon {
+  transition: transform 0.25s ease;
+  transform-origin: center center;
+}
+
+.svg {
+  height: 200px;
+  width: 200px;
+}
+
+.path {
+  transition: stroke-dashoffset 0.25s ease;
+  stroke-dasharray: calc(3.14 * 70);
+  stroke-dashoffset: calc(3.14 * 70);
+}
+
+#hi-group {
+  transition: transform 0.25s ease;
+  transform-origin: center center;
+}
+
+#attitude-indicator p {
+  position: absolute;
+  left: 11%;
+  bottom: 20vh;
+}
+
+#heading-indicator p {
+  position: absolute;
+  left: calc(50% - 63px);
+  bottom: 21vh;
+}
