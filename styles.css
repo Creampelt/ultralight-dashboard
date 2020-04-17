@@ -21,6 +21,7 @@ html, body {
 }
 
 .indicator-reading {
+  flex: 1 !important;
   text-align: center;
 }
 
@@ -76,4 +77,8 @@ html, body {
   position: absolute;
   left: calc(50% - 63px);
   bottom: 21vh;
+}
+
+#time-lapsed {
+  display: none;
 }
